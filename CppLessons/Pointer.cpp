@@ -10,7 +10,17 @@ void degerDegistir(int* ptr) {
 	*ptr = 20;
 	cout << "Fonksiyon icindeki deger: " << *ptr << endl;
 }
-
+//referans için
+void degerDegistirRef(int& ref) {
+	ref = 20;
+}
+//pointerlar ve const
+void printArray(const int* ptr1, const int* ptr2) {
+	for (; ptr1 != ptr2; ptr1++)
+	{
+		cout << "Eleman: " << *ptr1 << endl;
+	}
+}
 int main() {
 	//pointer
 	//bellekteki baþlangýç adres deðerini iþaret eder
@@ -45,6 +55,16 @@ int main() {
 	cout << ptr + 1 << endl;
 	cout << *(ptr + 1) << endl;// stringArray[1] ile ayný þey ya da ptr[1]
 
+	//referanslar
+	int x = 10;
+	int& ref = x;//referans tanýmlama
+	ref++;
+	cout << "x'in yeni degeri: " << x << endl;
+	degerDegistirRef(x);
+	cout << "x'in yeni degeri: " << x << endl;
 
+	//pointerlar ve const (pointerýn gösterdiði yer deðiþebilir ama gösterdiði yerin deðeri deðiþmez)
+	int array[] = { 10,20,30,40,50,60,70,80,90,100 };
+	printArray(array + 2, array + 7);
 	return 0;
 }

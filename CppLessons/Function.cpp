@@ -16,6 +16,12 @@ void factorial(int sayi) {
 int topla(int a, int b, int c) {
 	return a + b + c;
 }
+void printArray(int a[], int size) {
+	for (int i = 0; i < size; i++)
+	{
+		cout << a[i] << endl;
+	}
+}
 
 int main()
 {
@@ -27,6 +33,10 @@ int main()
 	factorial(sayi);
 	//geri dönüþlü fonksiyon
 	topla(1, 2, 3);
+
+	//arrayler ve fonksiyonlar
+	int a[] = { 1,2,3,4,5 };
+	printArray(a, 5);
 
 	return 0;
 }

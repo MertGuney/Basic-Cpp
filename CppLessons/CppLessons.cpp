@@ -252,6 +252,9 @@ int main()
 		break;
 	}
 
+	//const -> sabit deðer tanýmlama
+	const int i = 32;
+	cout << "Sabit deger: " << i << endl;
 	return 0;// Added by me
 }
 
