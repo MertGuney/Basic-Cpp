@@ -142,6 +142,7 @@
     <ClCompile Include="CppLessons.cpp" />
     <ClCompile Include="Function.cpp" />
     <ClCompile Include="Pointer.cpp" />
+    <ClCompile Include="Struct.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

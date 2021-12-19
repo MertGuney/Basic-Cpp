@@ -255,6 +255,13 @@ int main()
 	//const -> sabit deðer tanýmlama
 	const int i = 32;
 	cout << "Sabit deger: " << i << endl;
+
+	//sizeof -> bellekte kapladýðý yer
+	cout << "Integer: " << sizeof(int) << endl;
+	cout << "Char: " << sizeof(char) << endl;
+	cout << "Integer: " << sizeof(i) << endl;
+
+
 	return 0;// Added by me
 }
 
