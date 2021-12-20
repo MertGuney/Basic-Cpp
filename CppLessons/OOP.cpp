@@ -3,6 +3,31 @@
 
 using namespace std;
 
+class Emp {
+private:
+	int id;
+	int salary;
+	string name;
+
+public:
+	Emp(int id, int maas, string ad) {
+		this->id = id;//class içerisindeki propu iþaret etmek için this kullanýrýz
+		salary = maas;
+		name = ad;
+	}
+	Emp(int id, int salary) {
+		this->id = id;
+		this->salary = salary;
+		this->name = "Bilgi Yok";
+	}
+	void show() {
+		cout << "Id: " << id << endl;
+		cout << "Ad: " << name << endl;
+		cout << "Maas: " << salary << endl;
+	}
+};
+
+
 class Student {
 public:
 	string name;
@@ -52,13 +77,27 @@ int main() {
 	employee.salary = 10000;
 	employee.showInfos();
 
-	//private
+	//Private
 	student.setCity("Izmir");
 	student.getCity();
 
 	//Encapsulation
 	student.setAge(-3);
 	cout << "Yas: " << student.getAge() << endl;
+
+	//Pointer ve Class
+	Student* student3 = new Student();
+	student3->setCity("Ankara");
+	student3->setAge(25);
+	student3->getCity();
+	cout << student3->getAge() << endl;
+
+	//Constructor
+	Emp emp(1, 1000, "Mustafa");
+	emp.show();
+
+	//Constructor Overloading
+	Emp emp2(1, 1000);
 
 	return 0;
 }
