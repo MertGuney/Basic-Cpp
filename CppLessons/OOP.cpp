@@ -10,6 +10,7 @@ private:
 	string name;
 
 public:
+
 	Emp(int id, int maas, string ad) {
 		this->id = id;//class içerisindeki propu iþaret etmek için this kullanýrýz
 		salary = maas;
@@ -19,6 +20,12 @@ public:
 		this->id = id;
 		this->salary = salary;
 		this->name = "Bilgi Yok";
+	}
+	Emp() {
+		cout << "Constructor called" << endl;
+	}
+	~Emp() {
+		cout << "Destructor called" << endl;
 	}
 	void show() {
 		cout << "Id: " << id << endl;
@@ -98,6 +105,12 @@ int main() {
 
 	//Constructor Overloading
 	Emp emp2(1, 1000);
+
+	//Destructor
+	Emp* emp3 = new Emp();
+	delete emp3;
+	//Destructor ve bellek sýzýntýlarý 
+	// https://www.youtube.com/watch?v=AUbINK0oavo
 
 	return 0;
 }

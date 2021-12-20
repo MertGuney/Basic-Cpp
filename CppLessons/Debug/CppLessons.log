@@ -12,7 +12,9 @@ D:\CPP\CppLessons\CppLessons\CppLessons.cpp(202): message : see declaration of '
 D:\CPP\CppLessons\CppLessons\CppLessons.cpp(256,12): error C2373: 'i': redefinition; different type modifiers
 D:\CPP\CppLessons\CppLessons\CppLessons.cpp(127): message : see declaration of 'i'
 D:\CPP\CppLessons\CppLessons\CppLessons.cpp(257,26): error C2088: '<<': illegal for class
+  Employee.cpp
   Function.cpp
+  OOP.cpp
   Pointer.cpp
 D:\CPP\CppLessons\CppLessons\Pointer.cpp(38,6): error C2374: 'a': redefinition; multiple initialization
 D:\CPP\CppLessons\CppLessons\Pointer.cpp(27): message : see declaration of 'a'
