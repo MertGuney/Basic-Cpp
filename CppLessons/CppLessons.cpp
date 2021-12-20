@@ -261,6 +261,13 @@ int main()
 	cout << "Char: " << sizeof(char) << endl;
 	cout << "Integer: " << sizeof(i) << endl;
 
+	//foreach
+
+	int ar[] = { 10,20,30,40,50 };
+	for (int item : ar)
+	{
+		cout << item << endl;
+	}
 
 	return 0;// Added by me
 }

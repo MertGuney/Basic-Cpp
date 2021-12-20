@@ -67,8 +67,17 @@ int main() {
 	int array[] = { 10,20,30,40,50,60,70,80,90,100 };
 	printArray(array + 2, array + 7);
 
-	
+	//Dinamik bellek yönetimi new delete
+	int* ptr = new int;//new-> bir tane int tutacak yer ayýr bu ptr orayý göstersin --- new int[5]-> 5 tane int yer ayýr
+	delete ptr;//ptr nin gösterdiði bütün alanlarý bellekten kaldýr
 
+	//Null pointer, Dangling referans ve pointerlar
+	int* ptr = nullptr;//bu ptr bellekte herhangi bir yeri iþaret etmesin
+	ptr = new int;
+	*ptr = 10;
+	delete ptr;
+
+	*ptr = 10;//bellekte artýk olmayan bir yere deðer yazmaya çalýþýyoruz(dangling ref) hata alýrýz
 
 
 	return 0;

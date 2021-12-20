@@ -9,12 +9,22 @@ D:\CPP\CppLessons\CppLessons\CppLessons.cpp(164,6): error C2374: 'i': redefiniti
 D:\CPP\CppLessons\CppLessons\CppLessons.cpp(127): message : see declaration of 'i'
 D:\CPP\CppLessons\CppLessons\CppLessons.cpp(214,6): error C2086: 'int matris[3][3]': redefinition
 D:\CPP\CppLessons\CppLessons\CppLessons.cpp(202): message : see declaration of 'matris'
+D:\CPP\CppLessons\CppLessons\CppLessons.cpp(256,12): error C2373: 'i': redefinition; different type modifiers
+D:\CPP\CppLessons\CppLessons\CppLessons.cpp(127): message : see declaration of 'i'
+D:\CPP\CppLessons\CppLessons\CppLessons.cpp(257,26): error C2088: '<<': illegal for class
   Function.cpp
   Pointer.cpp
-D:\CPP\CppLessons\CppLessons\Pointer.cpp(28,6): error C2374: 'a': redefinition; multiple initialization
-D:\CPP\CppLessons\CppLessons\Pointer.cpp(17): message : see declaration of 'a'
-D:\CPP\CppLessons\CppLessons\Pointer.cpp(40,7): error C2374: 'ptr': redefinition; multiple initialization
-D:\CPP\CppLessons\CppLessons\Pointer.cpp(18): message : see declaration of 'ptr'
-D:\CPP\CppLessons\CppLessons\Pointer.cpp(44,10): error C2371: 'ptr': redefinition; different basic types
-D:\CPP\CppLessons\CppLessons\Pointer.cpp(18): message : see declaration of 'ptr'
+D:\CPP\CppLessons\CppLessons\Pointer.cpp(38,6): error C2374: 'a': redefinition; multiple initialization
+D:\CPP\CppLessons\CppLessons\Pointer.cpp(27): message : see declaration of 'a'
+D:\CPP\CppLessons\CppLessons\Pointer.cpp(50,7): error C2374: 'ptr': redefinition; multiple initialization
+D:\CPP\CppLessons\CppLessons\Pointer.cpp(28): message : see declaration of 'ptr'
+D:\CPP\CppLessons\CppLessons\Pointer.cpp(54,10): error C2371: 'ptr': redefinition; different basic types
+D:\CPP\CppLessons\CppLessons\Pointer.cpp(28): message : see declaration of 'ptr'
+D:\CPP\CppLessons\CppLessons\Pointer.cpp(67,6): error C2374: 'array': redefinition; multiple initialization
+D:\CPP\CppLessons\CppLessons\Pointer.cpp(49): message : see declaration of 'array'
+D:\CPP\CppLessons\CppLessons\Pointer.cpp(71,7): error C2374: 'ptr': redefinition; multiple initialization
+D:\CPP\CppLessons\CppLessons\Pointer.cpp(28): message : see declaration of 'ptr'
+D:\CPP\CppLessons\CppLessons\Pointer.cpp(75,7): error C2374: 'ptr': redefinition; multiple initialization
+D:\CPP\CppLessons\CppLessons\Pointer.cpp(28): message : see declaration of 'ptr'
+  Struct.cpp
   Generating Code...

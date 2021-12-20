@@ -5,6 +5,9 @@ void selamla() {
 	cout << "Merhaba\n";
 	cout << "Nasýlsýn?";
 }
+void selamla(string name) {
+	cout << "Merhaba " << name << endl;
+}
 void factorial(int sayi) {
 	int faktorial = 1;
 	for (int i = 0; i <= sayi; i++)
@@ -37,6 +40,9 @@ int main()
 	//arrayler ve fonksiyonlar
 	int a[] = { 1,2,3,4,5 };
 	printArray(a, 5);
+
+	//function overloading
+	selamla("Mert");
 
 	return 0;
 }
