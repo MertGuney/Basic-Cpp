@@ -3,6 +3,36 @@
 
 using namespace std;
 
+void StatikTest() {
+	static int i = 3;
+	cout << "i'nin Degeri: " << i << endl;
+	i++;
+}
+
+class Gamer {
+public:
+	static int gamers;
+	Gamer() {
+		gamers++;
+		cout << "Yeni oyuncu olusturuldu" << endl;
+	}
+	static void showEmp(Emp emp) {
+		cout << emp.name << " " << emp.salary << " " << emp.id << endl;
+	}
+};
+int Gamer::gamers = 0;
+
+
+class Mat {
+public:
+	static void cube(int x) {
+		cout << x * x * x << endl;
+	}
+	static void Add2(int x) {
+		cout << x + 2 << endl;
+	}
+};
+
 class Emp {
 private:
 	int id;
@@ -32,8 +62,12 @@ public:
 		cout << "Ad: " << name << endl;
 		cout << "Maas: " << salary << endl;
 	}
+	friend void friendFuncEmp(Emp emp);
+	friend class Gamer;
 };
-
+void friendFuncEmp(Emp emp) {
+	cout << emp.name << " " << emp.salary << " " << emp.id << endl;
+}
 
 class Student {
 public:
@@ -111,6 +145,27 @@ int main() {
 	delete emp3;
 	//Destructor ve bellek sýzýntýlarý 
 	// https://www.youtube.com/watch?v=AUbINK0oavo
+
+	//Statik deðiþkenler
+	//statik deðiþkenler bellekte bir kere oluþur ve sadece o isimle bir tane deðiþken olabilir
+
+	StatikTest();
+	StatikTest();
+	StatikTest();
+
+	//Statik class üyeleri
+	Gamer g1;
+	Gamer g2;
+	Gamer g3;
+
+	//Statik metodlar
+	Mat::cube(3);
+	Mat::Add2(20);
+
+	//Friend fonksiyon ve classlar
+	Emp emp4(1, 100, "mert");
+	friendFuncEmp(emp4);
+	Gamer::showEmp(emp4);
 
 	return 0;
 }

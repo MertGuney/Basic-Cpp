@@ -4,6 +4,23 @@
 #include <iostream>
 using namespace std;
 
+class Test {
+private:
+	int a;
+public:
+	Test(int a) {
+		this->a = a;
+	}
+	void test() {
+		cout << "Test" << endl;
+	}
+	//Bu method herhangi bir deðeri deðiþtiremez.const olmayan methodlarý çaðýramaz
+	int getValue() const {
+		//test(); metodu burada çalýþmaz cunku const deðil
+		return this->a;
+	}
+};
+
 int main()
 {
 	//std::cout << "Hello World!\n";
@@ -252,9 +269,13 @@ int main()
 		break;
 	}
 
-	//const -> sabit deðer tanýmlama
+	//const -> sabit deðer tanýmlama -- readonly
 	const int i = 32;
 	cout << "Sabit deger: " << i << endl;
+
+	//Const sýnýf üyeleri ve metodlarý
+	Test test1(10);
+	cout << test1.getValue() << endl;
 
 	//sizeof -> bellekte kapladýðý yer
 	cout << "Integer: " << sizeof(int) << endl;
